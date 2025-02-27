@@ -1,0 +1,13 @@
+body{
+text-align: center;
+background-color: aqua;
+}
+
+div{
+    background-color: bisque;
+    border-color: azure;
+    display: block;
+    height: 100px;
+    width: 100px;
+    
+}
