@@ -1,0 +1,176 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background: linear-gradient(135deg, #6dd5fa, #2193b0); /* Modern gradient */
+    margin-left: 220px; /* Space for the menu */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    color: #333; /* Darker text for better readability */
+    flex-wrap: nowrap;
+}
+
+/* Menu styling */
+#menuDiv {
+    display: flex;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+}
+
+/* Login container styling */
+#loginDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Slightly wider for better spacing */
+    height: 350px; /* Slightly taller for better spacing */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    flex-direction: column;
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    padding: 30px;
+    backdrop-filter: blur(10px); /* Blur effect for modern glassmorphism */
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+/* Input fields styling */
+#inputName, #inputPassword {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#inputName:focus, #inputPassword:focus {
+    border-color: #6dd5fa; /* Highlight focus with gradient color */
+    outline: none;
+}
+
+/* Button styling */
+#saveButton, #loginButton, #logoutButton, #exitAbout, #exitContent, #aboutButton, #contentButton, #cartButton, #settingsButton {
+    border-radius: 10px;
+    background-color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #333; /* Dark text for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#saveButton:hover, #loginButton:hover, #logoutButton:hover, #exitAbout:hover, #exitContent:hover, #aboutButton:hover, #contentButton:hover, #cartButton:hover, #settingsButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* About and Content containers */
+#aboutDiv, #contentDiv {
+    display: flex;
+    width: 250px; /* Slightly larger */
+    height: 250px; /* Slightly larger */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(138, 43, 226, 0.9); /* Semi-transparent blueviolet */
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: white; /* White text for contrast */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+    }
+    #menuDiv {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #loginDiv {
+        width: 90%;
+    }
+}
+
+/* Additional modern touches */
+#showName {
+    color: #4CAF50; /* Modern green */
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#loginDiv, #aboutDiv, #contentDiv {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+#settingsDiv {
+    display: flex;
+    width: 250px; /* Slightly larger */
+    height: 250px; /* Slightly larger */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: #333; /* Dark text for contrast */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+#exitSettings {
+    border-radius: 10px;
+    background-color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #333; /* Dark text for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+}
+
+#exitSettings:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
